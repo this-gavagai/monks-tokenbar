@@ -8,7 +8,7 @@ export class PF2eRolls extends BaseRolls {
         const { lore, ...skills } = this.config.skillList
 
         this._requestoptions = [
-            { id: "attribute", text: i18n("MonksTokenBar.Attribute"), groups: { perception: CONFIG.PF2E.attributes.perception } },
+            { id: "attribute", text: i18n("MonksTokenBar.Attribute"), groups: { perception: "PF2E.PerceptionLabel" } },
             //{ id: "ability", text: i18n("MonksTokenBar.Ability"), groups: this.config.abilities },
             { id: "save", text: i18n("MonksTokenBar.SavingThrow"), groups: this.config.saves },
             { id: "skill", text: i18n("MonksTokenBar.Skill"), groups: skills }
